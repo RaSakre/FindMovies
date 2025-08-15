@@ -1,6 +1,6 @@
 let moviesData = [];
 const URL = "https://api.kinopoisk.dev/v1.4/movie/search?";
-
+import { API_KEY } from './config.js';
 const movieForm = document.querySelector(".movie-form");
 const moviesList = document.querySelector(".movies-list");
 const preloader = document.getElementById('preloader');
@@ -26,7 +26,7 @@ const fetchMovies = (name) => {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
-            "X-API-KEY": "WGX9TC4-YGV42F2-K418JBP-T9CNZ0K",
+            "X-API-KEY": API_KEY,
         },
     });
 };
