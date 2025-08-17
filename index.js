@@ -60,7 +60,7 @@ function renderMovies() {
         <div class="movie-card-upper">
         <div class='movie-type'>${getMovieType(movie)}</div>
         <div class="movie-image-wrapper">
-            <img src="${movie.poster.url ?? 'https://kinopoiskapiunofficial.tech/images/posters/kp_small/630256.jpg?q_auto,f_auto,w_auto,dpr_auto'}" alt="${movie.name}" class="movie-image">
+            <img src="${movie?.poster?.url ?? 'https://kinopoiskapiunofficial.tech/images/posters/kp_small/630256.jpg?q_auto,f_auto,w_auto,dpr_auto'}" alt="${movie?.name}" class="movie-image">
         </div>
             <div class="movie-ratings">
                 <span class="movie-rating">
